@@ -1,0 +1,35 @@
+<html>
+    <head>  
+        <title>Curso Js</title>
+    </head>
+    <body>
+        <script>
+        //    function retornasexo(sexo){
+        //     if (sexo === 'M'){
+        //         return 'MASCULINO';
+        //     } else if (sexo === 'F'){
+        //         return 'FEMININO';
+        //     }else{
+        //         return 'OUTRO';
+        //     }
+        //    }
+        //    var resultado = retornasexo('F');
+        //    console.log(resultado);
+
+           //PARA EVITAR MUITOS IFS PODEMOS USAR SWITCH
+           function retornasexo(sexo){
+           switch (sexo){
+                case 'M':
+                    return'MASCULINO';
+                case 'F':
+                    return 'FEMININO';
+                default:
+                    return 'OUTRO';
+            }
+           }
+           var resultado = retornasexo('F');
+           console.log(resultado);
+           
+        </script>    
+    </body>
+</html>
