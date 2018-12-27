@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Desafio</title>
+  </head>
+  <body>
+    <script>
+      var usuarios = [
+        {
+          nome: "Diego",
+          habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+          nome: "Gabriel",
+          habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+      ];
+      function exibir(usuarios) {
+        for (armazenador of usuarios) {
+          console.log(
+            "O " +
+              armazenador.nome +
+              " possui as habilidades: " +
+              armazenador.habilidades.join(", ")
+          );
+        }
+      }
+      exibir(usuarios);
+    </script>
+  </body>
+</html>
