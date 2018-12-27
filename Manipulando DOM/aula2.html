@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manipulando DOM</title>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" name="nome" id="nome" class="nome" />
+      <!-- <input type="text" name="nome" id="nome2" class="nome" /> -->
+      <button class="botao">Adcionar</button>
+    </div>
+
+    <script>
+      var inputElement = document.getElementById("nome");
+      var retornaVetor = document.getElementsByTagName("input")[0];
+      var retornaVetorClass = document.getElementsByClassName("nome")[0];
+      var percorreOsElementos = document.querySelector("div#app input");
+      var referenciandoAPropriedadeDoElemento = document.querySelector(
+        "input[name=nome]"
+      );
+      var imprimindoTodosOsElementos = document.querySelectorAll("input");
+
+      console.log(inputElement);
+      console.log(retornaVetor);
+      console.log(retornaVetorClass);
+      console.log(percorreOsElementos);
+      console.log(referenciandoAPropriedadeDoElemento);
+      console.log(imprimindoTodosOsElementos);
+
+      //Outra forma de ação no botão,sem sujar o HTML.
+      var inputELement = document.querySelector("input[name=nome]");
+      var btnElement = document.querySelector("button.botao");
+
+      btnElement.onclick = function() {
+        var text = inputElement.value;
+        alert(text);
+        alert("Botão clicado");
+      };
+    </script>
+  </body>
+</html>
