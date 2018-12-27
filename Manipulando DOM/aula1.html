@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manipulando DOM</title>
+  </head>
+  <body>
+
+    <div id="app">
+      <button onclick="mostrarAlerta()">Me pressione</button>
+      <button onmouseover="mostrarAlertaPassouMouse()">Passe o mouse</button>
+      <input onkeypress="Tecla()"/>
+    </div>
+
+    <script>
+        
+      function mostrarAlerta() {
+        alert("Botão foi clicado.");
+      }
+      function mostrarAlertaPassouMouse() {
+        alert("Passou o mouse.");
+      }
+      function Tecla() {
+        alert("Pressionou tecla.");
+      }
+
+    </script>
+  </body>
+</html>
