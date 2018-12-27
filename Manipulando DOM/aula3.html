@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manipulando DOM</title>
+  </head>
+  <body>
+    <div id="app"><input id="nome" /></div>
+
+    <script>
+      var linkElement = document.createElement("a");
+      linkElement.setAttribute("href", "http://rocketseat.com.br");
+      linkElement.setAttribute("title", "Site da Rocketseat");
+
+      var textElement = document.createTextNode("Acessar site da Rocketseat");
+      linkElement.appendChild(textElement);
+
+      var containerElement = document.querySelector("#app");
+
+      //   A função appendChild() insere um elemento filho (children) ao elemento pai (parent) na última posição.
+      containerElement.appendChild(linkElement);
+
+      var inputElement = document.querySelector("#nome");
+      //Remove automaticamente do HTML.
+     // containerElement.removeChild(inputElement);
+    </script>
+  </body>
+</html>
