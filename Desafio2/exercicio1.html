@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manipulando DOM</title>
+  </head>
+  <body>
+     <button id="btn1">Clique</button>
+
+     <div id="img"></div>
+    
+    <script>
+    
+    var botaoElemento = document.getElementById('btn1');
+    var quadroElemento = document.getElementById('img');
+
+    botaoElemento.onclick = function() {
+        var elementoDiv = document.createElement('div');
+
+        elementoDiv.style.width = '100px';
+        elementoDiv.style.height = '100px';
+        elementoDiv.style.background = '#f00';
+
+        quadroElemento.appendChild(elementoDiv);
+
+    };
+
+
+
+
+
+    </script>
+
+  </body>
+</html>
+
+
