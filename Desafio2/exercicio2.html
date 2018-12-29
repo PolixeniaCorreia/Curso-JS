@@ -19,8 +19,22 @@
         elementoDiv.style.height = "100px";
         elementoDiv.style.background = "#f00";
 
+        elementoDiv.onmouseover = function() {
+          elementoDiv.style.backgroundColor = getRandomColor();
+        }
+
         quadroElemento.appendChild(elementoDiv);
       };
+
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
     </script>
   </body>
+ 
 </html>
