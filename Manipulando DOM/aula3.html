@@ -7,21 +7,21 @@
     <div id="app"><input id="nome" /></div>
 
     <script>
+      //Atribuindo valores,referencia e textos ao elemento a.
       var linkElement = document.createElement("a");
       linkElement.setAttribute("href", "http://rocketseat.com.br");
       linkElement.setAttribute("title", "Site da Rocketseat");
-
       var textElement = document.createTextNode("Acessar site da Rocketseat");
       linkElement.appendChild(textElement);
 
+      // A função appendChild() insere um elemento filho (children) ao elemento pai (parent) na última posição.
+      // inserindo o elemento "a"(linkElement) na div para que seja exibida em HTML.
       var containerElement = document.querySelector("#app");
-
-      //   A função appendChild() insere um elemento filho (children) ao elemento pai (parent) na última posição.
       containerElement.appendChild(linkElement);
 
       var inputElement = document.querySelector("#nome");
       //Remove automaticamente do HTML.
-     // containerElement.removeChild(inputElement);
+      // containerElement.removeChild(inputElement);
     </script>
   </body>
 </html>
