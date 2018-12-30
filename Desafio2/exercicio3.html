@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manipulando DOM</title>
+  </head>
+  <body>
+    <ul></ul>
+
+    <script>
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+      var listElement = document.querySelector('ul');
+
+      for(nome of nomes){
+         var liElement = document.createElement('li');
+        //No createTextNode deve ser passado um texto.
+        var nomeElement = document.createTextNode(nome);
+        
+        // li é oau de nome e listElement é pai de li.
+        liElement.appendChild(nomeElement);
+        listElement.appendChild(liElement);
+        
+      }
+
+    </script>
+  </body>
+ 
+</html>
