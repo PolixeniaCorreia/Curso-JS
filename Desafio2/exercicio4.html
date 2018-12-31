@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manipulando DOM</title>
+  </head>
+  <body>
+    <ul></ul>
+
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+
+    <script>
+      var nomes = ["Diego", "Gabriel", "Lucas"];
+      var listElement = document.querySelector('ul');
+      var inputElement = document.querySelector('input');
+
+      for(nome of nomes) {
+        addItem(nome); //Chamando a função responsavel 
+        //por add na tela e passando o vetor p ser exibido.
+         
+      }
+      
+      function adicionar() {
+        addItem(inputElement.value); //Chamando a função responsavel 
+        //por add na tela e passando o que foi digitado.
+        inputElement.value = "";
+      }
+
+      function addItem(text) {
+        var liElement = document.createElement('li');
+        var textElement = document.createTextNode(text);
+
+        liElement.appendChild(textElement);
+        listElement.appendChild(liElement);
+      }
+    </script>
+  </body>
+ 
+</html>
