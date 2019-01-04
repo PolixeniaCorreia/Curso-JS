@@ -3,7 +3,7 @@ var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 
 var todos = [
- 'Fazer cafe',
+ 'Fazer café',
  'Estudar Javascript',
  'Acessar comunidade'
 ];
