@@ -21,5 +21,3 @@ function renderRepo(repositories){
         listElement.appendChild(liElement);
     }
 }
-
-// PolixeniaCorreia
